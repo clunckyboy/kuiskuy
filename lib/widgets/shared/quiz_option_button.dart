@@ -15,7 +15,7 @@ class QuizOptionButton extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return Padding(
-      padding: EdgeInsets.symmetric( //const
+      padding: EdgeInsets.symmetric(
         vertical: 8,
       ),
       child: ElevatedButton(
@@ -27,7 +27,7 @@ class QuizOptionButton extends StatelessWidget {
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
             ),
-            padding: EdgeInsets.symmetric(vertical: 16), //const
+            padding: EdgeInsets.symmetric(vertical: 16),
           ),
           child: Text(
             text,

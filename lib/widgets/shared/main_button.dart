@@ -4,7 +4,7 @@ class MainButton extends StatelessWidget {
   final String text;
   final VoidCallback onPressed;
 
-  const MainButton({
+  MainButton({
     super.key,
     required this.text,
     required this.onPressed,
@@ -12,6 +12,9 @@ class MainButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context){
+
+    final screenSize = MediaQuery.of(context).size;
+
     return ElevatedButton(
         onPressed: onPressed,
         style: ElevatedButton.styleFrom(
@@ -21,12 +24,15 @@ class MainButton extends StatelessWidget {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(12),
           ),
-          padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 16),
+          padding: EdgeInsets.symmetric(
+              horizontal: screenSize.width * 0.1,
+              vertical: screenSize.height * 0.02
+          ),
         ),
         child: Text(
             text,
-            style: TextStyle( // const
-              fontSize: 18,
+            style: TextStyle(
+              fontSize: screenSize.width * 0.045,
               fontWeight: FontWeight.bold
             ),
         ),

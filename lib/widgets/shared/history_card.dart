@@ -4,7 +4,7 @@ import '../../models/quiz_result_model.dart';
 class HistoryCard extends StatelessWidget{
   final QuizResult result;
 
-  HistoryCard({ //const
+  HistoryCard({
     super.key,
     required this.result,
   });
@@ -14,12 +14,12 @@ class HistoryCard extends StatelessWidget{
     return Card(
       color: Colors.grey[200],
       elevation: 0,
-      margin: EdgeInsets.symmetric(vertical: 8), //const
+      margin: EdgeInsets.symmetric(vertical: 8),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(12),
       ),
       child: Padding(
-        padding: EdgeInsets.all(22.0), //const
+        padding: EdgeInsets.all(22.0),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [

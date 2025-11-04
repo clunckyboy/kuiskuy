@@ -25,7 +25,7 @@ class QuizApp extends StatelessWidget {
       title: 'Kuiskuy',
       theme: ThemeData(
         primaryColor: Colors.blue,
-        fontFamily: 'Arial',
+        fontFamily: 'Jetbrains',
         textTheme: TextTheme(
           displayLarge: TextStyle(
             fontSize: 32.0,

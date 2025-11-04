@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kuis_uts/models/quiz_result_model.dart';
 import 'package:provider/provider.dart';
 import '../state/quiz_state.dart';
 import '../widgets/home/enter_name_view.dart';
@@ -20,7 +19,7 @@ class HomeScreen extends StatelessWidget {
           case QuizStatus.enteringName:
             return const EnterNameView();
           case QuizStatus.inProgress:
-            return const QuizView();
+            return QuizView();
           case QuizStatus.completed:
             return const ScoreView();
         }

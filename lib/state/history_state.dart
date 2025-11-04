@@ -1,5 +1,4 @@
 import 'package:flutter/foundation.dart';
-import 'package:kuis_uts/models/question_model.dart';
 import '../models/quiz_result_model.dart';
 
 class HistoryState with ChangeNotifier {
