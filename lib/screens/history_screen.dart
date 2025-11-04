@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../state/history_state';
+import '../state/history_state.dart';
 import '../widgets/shared/history_card.dart';
 
 class HistoryScreen extends StatelessWidget {
@@ -35,7 +35,7 @@ class HistoryScreen extends StatelessWidget {
                     itemCount: historyState.history.length,
                     itemBuilder: (context, index){
                       final result = historyState.history[index];
-                      return historyCard(result: result)
+                      return HistoryCard(result: result);
                     },
                   );
                 },

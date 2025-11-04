@@ -20,8 +20,8 @@ class WelcomeView extends StatelessWidget{
           ),
           SizedBox(height: 40), // const
           MainButton(
-            'START QUIZ',
-            onPress: (){
+            text: 'START QUIZ',
+            onPressed: (){
               quizState.startQuiz();
             },
           ),

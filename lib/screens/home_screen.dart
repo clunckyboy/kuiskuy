@@ -21,7 +21,7 @@ class HomeScreen extends StatelessWidget {
             return const EnterNameView();
           case QuizStatus.inProgress:
             return const QuizView();
-          case QuiZStatus.completed:
+          case QuizStatus.completed:
             return const ScoreView();
         }
       },

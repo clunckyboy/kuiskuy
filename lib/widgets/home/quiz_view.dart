@@ -41,10 +41,10 @@ class QuizView extends StatelessWidget {
               const SizedBox(height: 32),
 
               // 3. Opsi Jawaban
-              ...List.generate(question.options.length, (index) {
+              ...List.generate(question.option.length, (index) {
                 final isSelected = quizState.selectedAnswers[quizState.currentQuestionIndex] == index;
                 return QuizOptionButton(
-                  text: question.options[index],
+                  text: question.option[index],
                   isSelected: isSelected,
                   onPressed: () {
                     quizState.selectAnswer(index);
@@ -62,7 +62,7 @@ class QuizView extends StatelessWidget {
                   if (quizState.currentQuestionIndex > 0)
                     IconButton(
                       icon: const Icon(Icons.arrow_back, size: 30),
-                      onPressed: () => quizState.prevQuestion(),
+                      onPressed: () => quizState.prevQuestions(),
                     )
                   else
                     const SizedBox(width: 48), // Placeholder agar alignment tetap

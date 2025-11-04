@@ -5,7 +5,7 @@ class HistoryCard extends StatelessWidget{
   final QuizResult result;
 
   HistoryCard({ //const
-    super.key
+    super.key,
     required this.result,
   });
 
